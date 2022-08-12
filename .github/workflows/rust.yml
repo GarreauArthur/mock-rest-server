@@ -19,7 +19,7 @@ jobs:
     - name: Add target
       run: rustup target add x86_64-unknown-linux-musl
     - name: Build
-      run: cargo build --release --target x86_64-unknown-linux-musl --verbose
+      run: cargo build --release --target x86_64-unknown-linux-musl 
     - name: Run tests
       run: cargo test --verbose
     - uses: "marvinpinto/action-automatic-releases@latest"
@@ -27,6 +27,6 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
         prerelease: false
-        title: "Development Build"
+        title: "latest-build"
         files: |
-          target/x86_64-unknown-linux-musl/release/mock-rest-server
+          ./target/x86_64-unknown-linux-musl/release/mock-rest-server
