@@ -11,7 +11,7 @@ The default values are:
 
 * port: 5123
 * resource: post
-* dir: /tmp/post
+* dir: /tmp/mocked_server
 
 to run the server use:
 
