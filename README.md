@@ -13,6 +13,14 @@ The default values are:
 * resource: post
 * dir: /tmp/mocked_server
 
+You can change them with the options:
+
+* `-p` or `--port`
+* `-r` or `--resource`
+* `-d` or `--dir`
+
+For help, use option `-h` or `--help`.
+
 to run the server use:
 
 ```sh
