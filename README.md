@@ -2,6 +2,9 @@
 
 Only tested on Ubuntu x86_64
 
+It's not really a mock server, it just catches the request and store the body
+in a file.
+
 Simple program to mock a REST endpoint and store the request's body in a file.
 You can make an HTTP POST request to `localhost:<port>/<resource>` and store the
 request's body in the file `<dir>/file-<current-timestamp>`.
